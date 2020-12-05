@@ -25,7 +25,7 @@ class _MyAppState extends State<MyApp> {
         backgroundColor: Colors.white,
         styleTextUnderTheLoader: new TextStyle(),
         photoSize: 100.0,
-        loaderColor: Colors.red);
+        loaderColor: Colors.grey);
   }
 }
 
