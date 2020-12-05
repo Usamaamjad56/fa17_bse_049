@@ -18,7 +18,7 @@ class _MyAppState extends State<MyApp> {
     return new SplashScreen(
         seconds: 10,
         navigateAfterSeconds: new AfterSplash(),
-        title: new Text('Usama' 'FA17-BSE-049'),
+        title: new Text('Usama.' 'FA17-BSE-049'),
         image: new Image.asset('image.jpeg'),
         backgroundColor: Colors.white,
         styleTextUnderTheLoader: new TextStyle(),
