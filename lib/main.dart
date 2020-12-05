@@ -1,3 +1,5 @@
+import 'package:fa17_bse_049/HardDice.dart';
+import 'package:fa17_bse_049/SimpleDice.dart';
 import 'package:flutter/material.dart';
 import 'package:splashscreen/splashscreen.dart';
 
@@ -79,9 +81,7 @@ class _HomePageState extends State<HomePage> {
                           fontSize: 20.0,
                         ),
                       ),
-                      onPressed: () {
-                        debugPrint('simple');
-                      },
+                      onPressed: simpleDice,
                     ),
                   ),
                 ),
@@ -98,9 +98,7 @@ class _HomePageState extends State<HomePage> {
                           fontSize: 20.0,
                         ),
                       ),
-                      onPressed: () {
-                        debugPrint('hard');
-                      },
+                      onPressed: hardDice,
                     ),
                   ),
                 ),
@@ -140,5 +138,19 @@ class _HomePageState extends State<HomePage> {
         ),
       ),
     );
+  }
+
+  void simpleDice() {
+    setState(() {
+      Navigator.push(context,
+          new MaterialPageRoute(builder: (context) => new SimpleDice()));
+    });
+  }
+
+  void hardDice() {
+    setState(() {
+      Navigator.push(
+          context, new MaterialPageRoute(builder: (context) => new HardDice()));
+    });
   }
 }
